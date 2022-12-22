@@ -89,38 +89,35 @@
     margin-left: 0rem;
     margin-right: 5rem;
 }
-
-.right{
-    float: right;
+.about_grid{
+    display: grid;
+    grid-template-areas: 
+    "text1 text1 img1" 
+    "img2 text2 img1" 
+    "img2 text3 img1";
+    gap: 2rem;
 }
 
-.about_para1{
-    display: flex;
-    flex-direction: row-reverse;
+.text_one{
+    grid-area: text1;
 }
 
-.text1{
-    padding-top:3rem;
-    float:left;
-    margin-left:2%;
-    align-self:flex-start;
-    font-size:medium;
+.text_two{
+    grid-area: text2;
 }
 
-.left{
-    float: left;
+.text_three{
+    grid-area: text3;
 }
 
-.about_para2{
-    display: flex;
-    align-items: center;
+.image_one{
+    grid-area: img1;
+    max-width: 420px;
 }
 
-.text2{
-    display:flex;
-    float:right;
-    margin-right:2%;
-    font-size:medium;
+.image_two{
+    grid-area: img2;
+    max-width: 300px;
 }
 
 .products_hr{
@@ -130,9 +127,48 @@
     margin-right: 5rem;
 }
 
+.product_one{
+    grid-area: prod1;
+}
+
+.product_two{
+    grid-area: prod2;
+}
+
+.product_three{
+    grid-area: prod3;
+}
+
+.product_four{
+    grid-area: prod4;
+}
+
+.product_five{
+    grid-area: prod5;
+}
+
+.product_six{
+    grid-area: prod6;
+}
+
+.product_seven{
+    grid-area: prod7;
+}
+
+.product_eight{
+    grid-area: prod8;
+}
+
+.product_nine{
+    grid-area: prod9;
+}
+
 .product_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "prod1 prod2 prod3" 
+    "prod4 prod5 prod6" 
+    "prod7 prod8 prod9";
     column-gap: 65px;
     row-gap: 70px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -143,6 +179,7 @@
     font-size:medium;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 
 .product_image {
     width: 275px;
@@ -221,7 +258,7 @@
 }
 
 .youtube{
-    margin-left:26rem;
+    margin-left:19rem;
     padding-top: 1rem;
 }
 
@@ -264,7 +301,7 @@
 .pretium{
     position:absolute;
     bottom: 0;
-    left: 26rem;
+    left: 19rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:smaller;
 }
@@ -272,7 +309,7 @@
 .amet{
     position:absolute;
     bottom: 0;
-    left: 49rem;
+    left: 40rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:smaller;
 }
@@ -290,4 +327,5 @@
     right: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:smaller;
+    padding-right: 1rem;
 }
