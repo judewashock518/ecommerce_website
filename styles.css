@@ -231,7 +231,8 @@
 }
 
 .send_message_button {
-    position:absolute;
+    margin-top: 1rem;
+    margin-left:28.7rem;
     background-color: #bf7631;
     width:6rem;
     color: white;
