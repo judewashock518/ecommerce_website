@@ -241,92 +241,101 @@
 }
 
 .footer{
-    position: relative;
-    text-align:center;
     display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
     background-color: #bf7631;
     color: black;
+    position:absolute;
 
 }
 
 .footer_container{
     display:flex;
+    justify-content:space-evenly;
+    width:100%;
+    max-width:600px;
 
 }
 
-.footer_flex_box{
-    display: flex;
+.footer_container_2 {
+    margin-left:30rem;
+}
+
+.footer_box{
+    display: grid;
+    grid-template-areas:
+    " youtube facebook caracara1 logo caracara2 twitter instagram";
+    justify-content:center;
 }
 
 .youtube{
-    margin-left:19rem;
     padding-top: 1rem;
+    grid-area: youtube;
 }
 
 .facebook{
     padding-top: 1rem;
+    grid-area: facebook;
 }
 
 .twitter{
-    margin-left:6rem;
     padding-top: 1rem;
+    grid-area: twitter;
 }
 
 .instagram{
     padding-top: 1rem;
+    grid-area: instagram;
 }
 
 .logo_style_footer{
     height: 3rem;
     width: 3rem;
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
+    grid-area: logo;
 }
 
 .cara_cara_footer1{
-    margin-left: 5rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2rem; 
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    grid-area: caracara1;
 }
 
 .cara_cara_footer2{
     margin-left: 0rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2rem; 
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    grid-area: caracara2;
 }
 
-.pretium{
+.small_print_container{
     position:absolute;
-    bottom: 0;
-    left: 19rem;
+    text-align:justify;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:smaller;
-}
-
-.amet{
-    position:absolute;
     bottom: 0;
-    left: 40rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:smaller;
 }
 
-.bottom_center_footer{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: small;
-    padding-top:3rem;
+.left_footer {
+    margin-left:0rem;
+    margin-top:0rem;
+}
+
+.right_footer {
+    margin-left: 19.4rem;
+    margin-top:-0.5rem;
+}
+
+.center_footer {
+    margin-top:0.5rem;
+    margin-bottom: 0.5rem;
     text-align:center;
 }
 
-.copyright{
-    position:absolute;
-    bottom: 0;
-    right: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:smaller;
-    padding-right: 1rem;
-}
